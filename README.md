@@ -1,3 +1,7 @@
+# Forked
+
+This fork hacks up the call to `createRemoteFileNode` from `download-media-files.js` to add in an HTTP header. The header pulls credentials from env variables that can be used on the backend to authenticate requests.
+
 # gatsby-source-strapi
 
 Source plugin for pulling documents into Gatsby from a Strapi API.
