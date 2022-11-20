@@ -80,6 +80,12 @@ export const downloadFile = async (file, ctx) => {
         cache,
         createNode,
         createNodeId,
+        httpHeaders: {
+          creds: JSON.stringify({
+            email: process.env.BUILD_EMAIL,
+            password: process.env.BUILD_PASSWORD,
+          }),
+        },
       });
 
       if (fileNode) {
